@@ -1,0 +1,16 @@
+#ignore all binary files like *.out and *.exe
+*/**/*.out
+*/**/*.exe
+
+#ignore all objective files
+*.o
+
+#ignore large test files like "/tests/random_1e8.txt"
+*/**/*[1-9]e[6-9]*.txt
+
+#ignore all archives
+*/**/*.zip
+*/**/*.rar
+*/**/*.arj
+*/**/*.7z
+*/**/*.tar
