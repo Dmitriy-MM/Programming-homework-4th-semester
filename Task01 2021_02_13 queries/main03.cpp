@@ -44,7 +44,7 @@ static int make_s_replace_x (
 {
 	FILE * fin, *fout;
 	char buf[LEN] = {'\0'};
-	int count_right_strs = 0;
+	int count_right_strs = 0, do_count = 0;
 	
 	Words_rider s_words (s, t), x_words (x, t);
 	int cmp_res, n;
@@ -60,20 +60,23 @@ static int make_s_replace_x (
 		fclose (fin);
 		return -ERROR_CANT_OPEN_FOUT;
 	}
-	
 	while (fgets (buf, LEN, fin))
 	{
 		Words_rider buf_words (buf, t); // Что-то очень непроизводительное (выделять память каждую итерацию).
 		char output_buf[LEN] = {'\0'};
 		
+		do_count = 0;
+		
 		rm_line_feed (buf, LEN);
 		strncpy (output_buf, buf, strspn (buf, t));
 		while ((buf_word_length = buf_words.get_word_length ()) != 0)
-		{			
+		{
+			buf_words.extract_word_to (buf_word_buf, WORD_LEN);
+
 			s_words.reset_pos ();
+			
 			while ((s_word_length = s_words.get_word_length ()) != 0)
 			{
-				buf_words.extract_word_to (buf_word_buf, WORD_LEN);
 				s_words.extract_word_to (s_word_buf, WORD_LEN);
 				
 				cmp_res = strcmp (buf_word_buf, s_word_buf);
@@ -82,7 +85,7 @@ static int make_s_replace_x (
 					n = s_words.get_cur_num ();
 					x_words.extract_N_word_to (n, buf_word_buf, WORD_LEN);
 					strcat (output_buf, buf_word_buf);
-					count_right_strs++;
+					do_count = 1;
 					break;
 				}
 				
@@ -96,8 +99,9 @@ static int make_s_replace_x (
 			
 			buf_words.next();
 		}
-		
-		fprintf (fout, "%s", output_buf);
+		if (do_count)
+			count_right_strs++;
+		fprintf (fout, "%s\n", output_buf);
 	}
 	if (!feof (fin))
 	{
@@ -108,9 +112,9 @@ static int make_s_replace_x (
 	return count_right_strs;
 }
 
-int main (int argc, char ** argv)
+int main (int argc, char *argv[])
 {
-	int task = 1, res;
+	int task = 3, res;
 	clock_t t_elapsed;
 	
 	if (!(

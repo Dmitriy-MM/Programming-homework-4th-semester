@@ -1,4 +1,3 @@
-#include <cstdio>
 #include "Query.h"
 
 void Query::parse (const char * source, const char * tabs, const char * op_type_name, int is_for_all)
@@ -31,18 +30,25 @@ int Query::apply_to (const char * str)
 	int cmp_res;
 	
 	if (!query_words.is_initiated)
+	{
+		printf ("");
 		return -1;
+	}
+	if (op_type == Query_operation::operation_invalid)
+	{
+		printf ("INVALID OPERATION!\n");
+		return -1;
+	}
 	
 	while ((str_word_length = str_words.get_word_length ()) != 0)
 	{
+		str_words.extract_word_to (str_word_buf, WORD_LEN);
 		query_words.reset_pos ();
 		while ((query_word_length = query_words.get_word_length ()) != 0)
 		{
-			str_words.extract_word_to (str_word_buf, WORD_LEN);
 			query_words.extract_word_to (query_word_buf, WORD_LEN);
 			cmp_res = strcmp (str_word_buf, query_word_buf);
-			
-			if (cmp_res == 1)
+			if (cmp_res > 0)
 			{
 				switch (op_type)
 				{
@@ -51,19 +57,13 @@ int Query::apply_to (const char * str)
 					case Query_operation::operation_ne:
 						if (flag_is_for_all)
 						{
-							query_words.next ();
-							continue;
+							break;
 						}
 						else
 							return 1;
-					default:
-						if (flag_is_for_all)
-							return 0;
-						else
-						{
+					default: 
 							query_words.next ();
 							continue;
-						}
 				}
 			}
 			else if (cmp_res == 0)
@@ -71,21 +71,17 @@ int Query::apply_to (const char * str)
 				switch (op_type)
 				{
 					case Query_operation::operation_eq:
+					case Query_operation::operation_le:
+					case Query_operation::operation_me:
 						if (flag_is_for_all)
 						{
-							query_words.next ();
-							continue;
+							break;
 						}
 						else
 							return 1;
-					default:
-						if (flag_is_for_all)
-							return 0;
-						else
-						{
+					default: 
 							query_words.next ();
 							continue;
-						}
 				}
 			}
 			else
@@ -97,25 +93,22 @@ int Query::apply_to (const char * str)
 					case Query_operation::operation_ne:
 						if (flag_is_for_all)
 						{
-							query_words.next ();
-							continue;
+							break;
 						}
 						else
 							return 1;
-					default:
-						if (flag_is_for_all)
-							return 0;
-						else
-						{
+					default: 
 							query_words.next ();
 							continue;
-						}
 				}
 			}
+			break;
 		}
-		
+		if ((query_words.get_word_length () == 0) && flag_is_for_all)
+		{ return 0;	}
 		str_words.next ();
 	}
+	
 	if (flag_is_for_all)
 		return 1;
 	else

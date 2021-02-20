@@ -8,7 +8,7 @@ private:
 
 	const char * str_source;
 	const char * str_tabs;
-	char * position;
+	const char * position;
 	int num_of_cur_word;
 	int is_initiated;
 	
@@ -16,7 +16,7 @@ private:
 	{
 		this->str_source = str_source;
 		this->str_tabs = str_tabs;
-		position = (char *) str_source + (int) (strspn (str_source, str_tabs));
+		position = str_source + (int) (strspn (str_source, str_tabs));
 		num_of_cur_word = 0;
 		is_initiated = 1;
 	}
@@ -38,7 +38,7 @@ public:
 		num_of_cur_word = 0;
 	}
 	
-	inline char * get_pos () const { return position; }
+	inline const char * get_pos () const { return position; }
 	inline int get_word_length () const { return (int) (strcspn (position, str_tabs)); }
 	inline int get_cur_num () const { return num_of_cur_word; }
 	
@@ -49,7 +49,7 @@ public:
 	}
 	void reset_pos ()
 	{
-		position = (char *) str_source + (int) (strspn (str_source, str_tabs));
+		position = str_source + (int) (strspn (str_source, str_tabs));
 		num_of_cur_word = 0;
 	}
 	void extract_word_to (char * buf, int buf_len)
@@ -69,7 +69,7 @@ public:
 	}
 	void extract_tabs_after_word (char * buf, int buf_len)
 	{
-		char * tabs_position = position + strcspn (position, str_tabs);
+		const char * tabs_position = position + strcspn (position, str_tabs);
 		int tabs_length = strspn (tabs_position, str_tabs);
 		tabs_length = (buf_len < tabs_length)? buf_len: tabs_length;
 		

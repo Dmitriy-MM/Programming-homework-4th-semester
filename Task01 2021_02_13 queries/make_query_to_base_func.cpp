@@ -18,7 +18,7 @@ static void rm_line_feed (char * str, int max_length)
 	{
 		if (str[i] == '\n')
 		{
-			str[i] = '\n';
+			str[i] = '\0';
 			break;
 		}
 	}
@@ -54,7 +54,7 @@ int make_query_to_base (
 	{
 		rm_line_feed (buf, LEN);
 		if (query.apply_to (buf))
-		{ 
+		{		
 			count_right_strs++;
 			fprintf (fout, "%s", buf);
 		}

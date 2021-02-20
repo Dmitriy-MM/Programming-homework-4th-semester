@@ -12,9 +12,9 @@ enum MAIN_RET_CODES
 };
 
 
-int main (int argc, char ** argv)
+int main (int argc, char * argv[])
 {
-	int task = 1, res;
+	int task = 5, res;
 	clock_t t_elapsed;
 	
 	if (!(
