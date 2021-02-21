@@ -1,3 +1,4 @@
+#include <cstdio>
 #include "Query.h"
 
 void Query::parse (const char * source, const char * tabs, const char * op_type_name, int is_for_all)
@@ -31,7 +32,7 @@ int Query::apply_to (const char * str)
 	
 	if (!query_words.is_initiated)
 	{
-		printf ("");
+		printf ("Apply was called before \"parse\" function\n");
 		return -1;
 	}
 	if (op_type == Query_operation::operation_invalid)
