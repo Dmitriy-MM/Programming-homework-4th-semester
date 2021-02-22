@@ -14,5 +14,10 @@
 */**/*.arj
 */**/*.7z
 */**/*.tar
-*/**/*test*
-*/**/*res*
+
+#ignore test and result .txt files
+*/**/*test*.txt
+*/**/*res*.txt
+
+#ignore feature dev
+*/**/*feature*/*
