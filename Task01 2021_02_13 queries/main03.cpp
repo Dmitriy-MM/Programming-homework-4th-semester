@@ -28,7 +28,7 @@ static void rm_line_feed (char * str, int max_length)
 	{
 		if (str[i] == '\n')
 		{
-			str[i] = '\n';
+			str[i] = '\0';
 			break;
 		}
 	}
@@ -36,8 +36,8 @@ static void rm_line_feed (char * str, int max_length)
 
 
 static int make_s_replace_x (
-	const char * filename,
-	const char * filename2,
+	const char * filename_in,
+	const char * filename_out,
 	const char * s,
 	const char * t,
 	const char * x)
@@ -51,10 +51,10 @@ static int make_s_replace_x (
 	int buf_word_length, s_word_length;
 	char buf_word_buf [WORD_LEN], s_word_buf[WORD_LEN];
 	
-	fin = fopen (filename, "r");
+	fin = fopen (filename_in, "r");
 	if (!fin)
 	{ return -ERROR_CANT_OPEN_FIN; }
-	fout = fopen (filename2, "w");
+	fout = fopen (filename_out, "w");
 	if (!fout)
 	{
 		fclose (fin);
@@ -62,9 +62,8 @@ static int make_s_replace_x (
 	}
 	while (fgets (buf, LEN, fin))
 	{
-		Words_rider buf_words (buf, t); // Что-то очень непроизводительное (выделять память каждую итерацию).
+		Words_rider buf_words (buf, t); // Is unproductive (to recreate the object in each iteration)?
 		char output_buf[LEN] = {'\0'};
-		
 		do_count = 0;
 		
 		rm_line_feed (buf, LEN);

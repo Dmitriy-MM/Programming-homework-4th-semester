@@ -1,7 +1,7 @@
 WINDOWS_FLAGS = -g -O3 -W -Wall -Wunused -Wcast-align -Werror -pedantic -pedantic-errors  -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wno-long-long -Wmissing-declarations
 LINUX_FLAGS = -O3 -fsanitize=address -mfpmath=sse -fstack-protector-all -g -W -Wall -Wextra -Wunused -Wcast-align -Werror -pedantic -pedantic-errors -Wfloat-equal -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Wformat=1 -Wwrite-strings -Wcast-align -Wno-long-long -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-qual -Wno-suggest-attribute=format
-#CFLAGS = $(LINUX_FLAGS)
-CFLAGS = -O3 -lm -fsanitize=address -mfpmath=sse -fstack-protector-all -g -W -Wall -Wextra -Wunused -Wcast-align -Werror -pedantic -pedantic-errors -Wfloat-equal -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Wformat=1 -Wwrite-strings -Wcast-align -Wno-long-long -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-qual -Wno-suggest-attribute=format
+CFLAGS = $(LINUX_FLAGS)
+#CFLAGS = -O3 -lm -fsanitize=address -mfpmath=sse -fstack-protector-all -g -W -Wall -Wextra -Wunused -Wcast-align -Werror -pedantic -pedantic-errors -Wfloat-equal -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Wformat=1 -Wwrite-strings -Wcast-align -Wno-long-long -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-qual -Wno-suggest-attribute=format
 
 MAX_DEEP = 5
 #VALGRIND = valgrind
@@ -39,8 +39,11 @@ clean:
 	rm -f *.out
 	rm -f *.o
 	rm -f *.exe
-	rm -f *summary*
-	rm b.txt
+	rm -f *summary*.txt
+	rm -f b.txt
+
+fear: a01.out
+	./a01.out test_1e6.txt b.txt "-- dddddddddd;;;;;; ddddddddddd abcbcbcbcbcb-;-;- bdddacda aadbdfc ccccdbbbbbbba aasdfbc bacdcb ccbadb badbac acdacdb bdbbadcda dbab asd 3dsaf  45aijm bdddd sm kn 3ssf" "   -- - - - - - -  - +++++ -+  - = imk ][{} 0000123qwerqwerqwerwqrwqerqwerqwrw----+++  + -  4tttynm234523452345345pzxzrqwer; 42530--=; qwe]"
 
 test: a01.out a02.out a03.out a04.out a05.out
 	./a01.out test_1e2.txt b.txt "abc" " ;-"

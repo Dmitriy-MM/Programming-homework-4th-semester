@@ -1,3 +1,4 @@
+#include <cstdio>
 #include "make_query_to_base_func.h"
 
 #define LEN 1234
@@ -26,8 +27,8 @@ static void rm_line_feed (char * str, int max_length)
 
 
 int make_query_to_base (
-	const char * filename,
-	const char * filename2,
+	const char * filename_in,
+	const char * filename_out,
 	const char *s,
 	const char *t,
 	const char * op_type_name,
@@ -40,10 +41,10 @@ int make_query_to_base (
 	
 	query.parse (s, t, op_type_name, is_for_all);
 	
-	fin = fopen (filename, "r");
+	fin = fopen (filename_in, "r");
 	if (!fin)
 	{ return -ERROR_CANT_OPEN_FIN; }
-	fout = fopen (filename2, "w");
+	fout = fopen (filename_out, "w");
 	if (!fout)
 	{
 		fclose (fin);
@@ -56,7 +57,7 @@ int make_query_to_base (
 		if (query.apply_to (buf))
 		{		
 			count_right_strs++;
-			fprintf (fout, "%s", buf);
+			fprintf (fout, "%s\n", buf);
 		}
 	}
 	if (!feof (fin))

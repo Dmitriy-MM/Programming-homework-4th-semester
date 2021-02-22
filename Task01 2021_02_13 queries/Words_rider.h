@@ -6,27 +6,21 @@
 class Words_rider {
 private:
 
-	const char * str_source;
-	const char * str_tabs;
-	const char * position;
-	int num_of_cur_word;
-	int is_initiated;
+	const char * str_source = nullptr;
+	const char * str_tabs = nullptr;
+	const char * position = nullptr;
+	int num_of_cur_word = -1;
 	
+	
+	Words_rider () = default; // Explicit prohibition of the default constructor.
 	void init (const char * str_source, const char * str_tabs)
 	{
 		this->str_source = str_source;
 		this->str_tabs = str_tabs;
 		position = str_source + (int) (strspn (str_source, str_tabs));
 		num_of_cur_word = 0;
-		is_initiated = 1;
 	}
 public:
-	Words_rider ()
-	{
-		position = nullptr;
-		num_of_cur_word = -1;
-		is_initiated = 0;
-	}
 	Words_rider (const char * arg_str_source, const char * arg_str_tabs)
 	{
 		init (arg_str_source, arg_str_tabs);
@@ -35,12 +29,12 @@ public:
 	{
 		str_source = str_tabs = nullptr;
 		position = nullptr;
-		num_of_cur_word = 0;
+		num_of_cur_word = -1;
 	}
 	
-	inline const char * get_pos () const { return position; }
-	inline int get_word_length () const { return (int) (strcspn (position, str_tabs)); }
-	inline int get_cur_num () const { return num_of_cur_word; }
+	const char * get_pos () const { return position; }
+	int get_word_length () const { return (int) (strcspn (position, str_tabs)); }
+	int get_cur_num () const { return num_of_cur_word; }
 	
 	void next ()
 	{
