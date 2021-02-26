@@ -22,11 +22,11 @@ int Query::apply_to (const char * str)
 
 void Query::parse (const char * source, const char * tabs, Query_type type, Query_processing_order order, Query_operation arg_op_type)
 {
-	init_tabs_str (tabs);
-	init_s_words_array (source);
 	qu_type = type;
 	pr_order = order;
 	op_type = arg_op_type;
+	init_tabs_str (tabs);
+	init_s_words_array (source);
 }
 
 void Query::parse (const char * source, const char * tabs, const char * op_type_name, int is_for_all)
@@ -186,26 +186,6 @@ int Query::init_s_words_array_for_regexp (const char * str)
 }
 
 
-int Query::try_to_extract_word_into_s_words (const char * str, size_t& i, size_t& last_word_pos, size_t& m)
-{
-	size_t word_length = i - last_word_pos;//- 1;
-	if (flag_word_or_tabs == FLAG_WORD_OR_TABS::WORD)
-	{
-		s_words[m] = new char [word_length + 1];
-		if (s_words[m] == nullptr)
-		{
-			for (i = 0; i < m; i++)
-				delete[] s_words[i];
-			delete[] s_words;
-			s_words_length = 0;
-			return 1;
-		}
-		strncpy (s_words[m], str + last_word_pos, word_length);
-		m++;
-	}
-	return 0;
-}
-
 
 int Query::get_amount_of_words_for_s_array (const char * str, const char * str_tabs, const char * spec_symbols)
 {
@@ -221,7 +201,7 @@ int Query::get_amount_of_words_for_s_array (const char * str, const char * str_t
 			for (j = 0; j < strlen (str_tabs); j++)
 				if (str_tabs[j] == str[i])
 				{
-					if (flag_word_or_tabs == FLAG_WORD_OR_TABS::WORD) // вынести в функцию
+					if (flag_word_or_tabs == FLAG_WORD_OR_TABS::WORD) // TODO вынести в функцию.
 						num_words++;
 					flag_word_or_tabs = FLAG_WORD_OR_TABS::TABS;
 					break;
@@ -326,6 +306,27 @@ int Query::to_fill_s_words_array (const char * str, const char * str_tabs, const
 	return 0;
 }
 
+
+int Query::try_to_extract_word_into_s_words (const char * str, size_t& i, size_t& last_word_pos, size_t& m)
+{
+	size_t word_length = i - last_word_pos;
+	if (flag_word_or_tabs == FLAG_WORD_OR_TABS::WORD)
+	{
+		s_words[m] = new char [word_length + 1];
+		if (s_words[m] == nullptr)
+		{
+			for (i = 0; i < m; i++)
+				delete[] s_words[i];
+			delete[] s_words;
+			s_words_length = 0;
+			return 1;
+		}
+		strncpy (s_words[m], str + last_word_pos, word_length);
+		s_words[m][word_length] = '\0';
+		m++;
+	}
+	return 0;
+}
 
 
 int Query::to_process_qu_find (const char * str)

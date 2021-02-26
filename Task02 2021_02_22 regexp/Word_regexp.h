@@ -237,7 +237,7 @@ public:
 		Word_regexp checker (str, regexp);
 		int result = 0;
 		int i;
-		const int MAX_ITERATIONS = 12;
+		const int MAX_ITERATIONS = 14;
 		
 		for (i = 0; ((result = checker.next()) != 1) && (result != 0) && (i < (1 << MAX_ITERATIONS)); i++)
 		{}
