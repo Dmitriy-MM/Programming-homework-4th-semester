@@ -14,6 +14,7 @@
 */**/*.arj
 */**/*.7z
 */**/*.tar
+*/**/*.tar.gz
 
 #ignore test and result .txt files
 */**/*test*.txt
