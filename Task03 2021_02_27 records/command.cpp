@@ -50,17 +50,13 @@ bool Command::parse (const char * str)
 	{
 		this->c_phone = get_condition (operator_name);
 		if (sscanf (expression_name, "%d", &phone) != 1)
-		{
 			return false;
-		}
 	} 
 	else if ((!strcmp (field_name, "group")) || (!strcmp (field_name, "value")))
 	{
 		this->c_group = get_condition (operator_name);
 		if (sscanf (expression_name, "%d", &group) != 1)
-		{
 			return false;
-		}
 	}
 	else if (!strcmp (field_name, "name"))
 	{
@@ -89,9 +85,7 @@ void Command::print (FILE *fp) const
 // Apply Command, return comparision result for Record ’x’.
 bool Command::apply (const Record& x) const
 {
-	if (compare_phone (c_phone, x))
-		if (compare_group (c_group, x))
-			if (compare_name (c_name, x))
-				return true;
+	if (compare_phone (c_phone, x) && compare_group (c_group, x) && compare_name (c_name, x))
+		return true;
 	return false;
 }

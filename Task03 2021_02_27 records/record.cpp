@@ -24,7 +24,6 @@ int Record::init (const char *n, int p, int g)
 
 void Record::print (FILE *fp) const
 {
-	//fprintf (fp, "name = \"%s\" phone = %d group = %d\n", name.get(), phone, group);
 	fprintf (fp, "%s %d %d\n", name.get(), phone, group);
 }
 
@@ -39,31 +38,29 @@ int Record::read (FILE *fp)
 	}
 	if (init (buf, phone, group))
 		return Read_status::memory;
-	
 	return Read_status::success;
 }
-
 
 bool Record::compare_phone (Condition x, const Record& y) const
 {
 	switch (x)
 	{
-		case Condition::none: // not specified
-			return true; // unspecified opeation is true
-		case Condition::eq: // equal
+		case Condition::none: 
+			return true;
+		case Condition::eq: 
 			return y.phone == phone;
-		case Condition::ne: // not equal
+		case Condition::ne: 
 			return y.phone != phone;
-		case Condition::lt: // less than
+		case Condition::lt:
 			return y.phone < phone;
-		case Condition::gt: // less than
+		case Condition::gt: 
 			return y.phone > phone;
-		case Condition::le: // less equal
+		case Condition::le: 
 			return y.phone <= phone;
-		case Condition::ge: // great equal
+		case Condition::ge: 
 			return y.phone >= phone;
-		case Condition::like: // strings only: match pattern
-			return false; // cannot be used for phone
+		case Condition::like:
+			return false;
 	}
 	return false;
 }
@@ -72,22 +69,22 @@ bool Record::compare_group (Condition x, const Record& y) const
 {
 	switch (x)
 	{
-		case Condition::none: // not specified
-			return true; // unspecified opeation is true
-		case Condition::eq: // equal
+		case Condition::none: 
+			return true; 
+		case Condition::eq: 
 			return y.group == group;
-		case Condition::ne: // not equal
+		case Condition::ne: 
 			return y.group != group;
-		case Condition::lt: // less than
+		case Condition::lt: 
 			return y.group < group;
-		case Condition::gt: // less than
+		case Condition::gt: 
 			return y.group > group;
-		case Condition::le: // less equal
+		case Condition::le: 
 			return y.group <= group;
-		case Condition::ge: // great equal
+		case Condition::ge:
 			return y.group >= group;
-		case Condition::like: // strings only: match pattern
-			return false; // cannot be used for group
+		case Condition::like: 
+			return false; 
 	}
 	return false;
 }
@@ -99,23 +96,22 @@ bool Record::compare_name (Condition x, const Record& y) const
 		cmpres = strcmp (y.get_name(), this->get_name());
 	switch (x)
 	{
-		case Condition::none: // not specified
-			return true; // unspecified opeation is true
-		case Condition::eq: // equal
+		case Condition::none: 
+			return true; 
+		case Condition::eq: 
 			return cmpres == 0;
-		case Condition::ne: // not equal
+		case Condition::ne: 
 			return cmpres != 0;
-		case Condition::lt: // less than
+		case Condition::lt: 
 			return cmpres < 0;
-		case Condition::gt: // less than
+		case Condition::gt: 
 			return cmpres > 0;
-		case Condition::le: // less equal
+		case Condition::le: 
 			return cmpres <= 0;
-		case Condition::ge: // great equal
+		case Condition::ge: 
 			return cmpres >= 0;
-		case Condition::like: // strings only: match pattern
-			return Word_regexp::check_is_suitable (y.get_name(), this->get_name()); // cannot be used for group
+		case Condition::like: 
+			return Word_regexp::check_is_suitable (y.get_name(), this->get_name()); 
 	}
 	return false;
 }
-

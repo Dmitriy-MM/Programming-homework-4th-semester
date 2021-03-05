@@ -2,7 +2,7 @@
 #include <time.h>
 
 #include "record.h"
-#include "list2/list_2.h"
+#include "list_2.h"
 #include "command.h"
 
 static const int LEN = 1234;
@@ -45,7 +45,6 @@ static int process (List_2<Record> & base, FILE *fp = stdin, FILE *fout = stdout
 			{
 				if (command.apply (*cur))
 				{
-					//fprintf (fout, "match ");
 					cur->print (fout);
 					res++;
 				}
@@ -82,13 +81,11 @@ int main (int argc, char * argv[])
 		return READ_BASE_ERROR;
 	}
 	
-	//base.print (stdout);
 	time = clock ();
 	res = process (base);
 	time = clock () - time;
 	
 	printf ("%s : Result = %d Elapsed = %.2lf\n", argv[0], res, (double) time / CLOCKS_PER_SEC);
-	
 	return SUCCESS;
 }
 

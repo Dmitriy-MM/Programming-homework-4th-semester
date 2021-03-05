@@ -15,10 +15,8 @@ enum class Symbol_states {
 	end,
 };
 
-
 static int all_conditions_for_range_state (const char * str)
 {
-	// Проверка того, что начало строки имеет вид "[a-b]" или "[^a-b]" (здесь пока не все).
 	if (!(strlen (str) >= 5))
 		return 0;
 	if ((strlen (str) - strcspn (str, "]")) <= 0)
@@ -130,7 +128,7 @@ private:
 					break;
 				}
 				
-				if (*regexp_pos == '\\') { // *regexp_pos поменять на smb.
+				if (*regexp_pos == '\\') {
 					state = Symbol_states::backslash;
 				} else if (*regexp_pos == '%') {
 					state = Symbol_states::percent;
@@ -199,7 +197,7 @@ private:
 				if (!range_processing ())
 				{
 					range_mismatch = Range_mismatch::MISMATCH;
-					state = Symbol_states::end; // Там тоже будет 0 и выход с результатом несоответствия.
+					state = Symbol_states::end;
 				}
 				else
 				{

@@ -11,33 +11,16 @@ private:
 	List_2_node * next = nullptr;
 	List_2_node * prev = nullptr;
 public:
-	List_2_node * get_next (void) const
-	{
-		return this->next;
-	}
-	void set_next (List_2_node * new_next)
-	{
-		next = new_next;
-	}
 	List_2_node () = default;
-	List_2_node (const List_2_node& x): T (x)
-	{
-		next = nullptr;
-		prev = nullptr;
-	}
-	List_2_node (List_2_node&& x): T (x)
-	{
-		next = x.next;
-		x.next = nullptr;
-		x.prev = nullptr;
-	}
-	~List_2_node ()
-	{
-		next = nullptr;
-		prev = nullptr;
-	}
+	List_2_node (const List_2_node& x): T (x) {	next = nullptr;	prev = nullptr;	}
+	List_2_node (List_2_node&& x): T (x) { next = x.next; x.next = nullptr;	x.prev = nullptr; }
+	~List_2_node ()	{ next = nullptr; prev = nullptr; }
 	List_2_node& operator = (const List_2_node&);
 	List_2_node& operator = (List_2_node&&);
+
+	List_2_node * get_next (void) const	{ return this->next; }
+	void set_next (List_2_node * new_next) { next = new_next; }
+	
 	friend class List_2<T>;
 };
 
@@ -52,7 +35,6 @@ private:
 	void clear_list (void)
 	{
 		List_2_node<T> * next;
-		
 		while (head != nullptr)
 		{
 			next = head->get_next ();
@@ -62,18 +44,37 @@ private:
 		head = nullptr;
 	}
 public:
+	enum RET_CODES {
+		SUCCESS = 0,
+		INPUT_NON_ZERO_PTR_ERROR,
+		OPEN_FILE_ERROR,
+		READ_HEAD_ERROR,
+		NO_REACH_EOF_ERROR,
+		BAD_FORMAT_ERROR
+	};
+	List_2 () = default;
+	~List_2 () { clear_list ();	}
+	List_2 (List_2 && list)	{ this->head = list.head; list.head = nullptr; }
+	
 	List_2_node<T> * get_head () const { return head; }
+	int get_length (void) const
+	{
+		List_2_node<T> * cur = head;
+		int i;
+		for (i = 0; cur != nullptr; cur = cur->next)
+			i++;
+		return i;
+	}
+	static void set_m (int new_m) {	m = new_m; }
+	static void set_r (int new_r) {	r = new_r; }
+	
 	int read (FILE *fp)
 	{
 		List_2_node<T> *tail = nullptr, *tmp = nullptr;
-		int ret_code;
-		int i = 0;
+		int ret_code, i = 0;
 		
 		if (head != nullptr)
-		{
 			return RET_CODES::INPUT_NON_ZERO_PTR_ERROR;
-		}
-		
 		if (m < 0)
 			return SUCCESS;
 		
@@ -87,13 +88,8 @@ public:
 		}
 		i++;
 		
-		tail = head;
-		while (1)
+		for (tail = head; (i < m) || (m == 0); tail = tail->next, i++)
 		{
-			if ((i >= m) && (m != 0))
-			{
-				break;
-			}
 			tmp = new List_2_node<T>;
 			ret_code = tmp->read (fp);
 			if (ret_code != 0)
@@ -101,12 +97,10 @@ public:
 				delete tmp;
 				if (feof (fp))
 					break;
-				clear_list ();//, fclose (fp);
+				clear_list ();
 				return RET_CODES::BAD_FORMAT_ERROR;
 			} 
 			tail->next = tmp, tmp->prev = tail;
-			tail = tail->next;
-			i++;
 		}
 		tmp = nullptr;
 
@@ -117,6 +111,7 @@ public:
 		}
 		return RET_CODES::SUCCESS;
 	}
+	
 	void print (FILE *fp = stdout)
 	{
 		List_2_node<T> * cur = head;
@@ -134,41 +129,5 @@ public:
 			cur->print (fp);
 		}
 	}
-	int get_length (void) const
-	{
-		List_2_node<T> * cur = head;
-		int i;
-		for (i = 0; cur != nullptr; cur = cur->next)
-			i++;
-		return i;
-	}
-	//static void set_m (int new_m) {
-		//m = new_m;
-	//}
-	//static void set_r (int new_r) {
-		//r = new_r;
-	//}
-	enum RET_CODES {
-		SUCCESS = 0,
-		INPUT_NON_ZERO_PTR_ERROR,
-		OPEN_FILE_ERROR,
-		READ_HEAD_ERROR,
-		NO_REACH_EOF_ERROR,
-		BAD_FORMAT_ERROR
-	};
-	//static void error_handler (int er);
-	
-	List_2 () = default;
-	~List_2 ()
-	{
-		clear_list ();
-	}
-	
-	//Конструктор перемещения.
-	List_2 (List_2 && list)
-	{
-		this->head = list.head;
-		list.head = nullptr;
-	}
 };
-#endif //LIST2
+#endif // LIST2.
