@@ -19,9 +19,14 @@
 #ignore test and result .txt files
 */**/*test*.txt
 */**/*res*.txt
+#and more - ignore all .txt files
+*/**/*.txt
 
 #but "tests/" catalog is good for us
 !*/**/tests/*
+
+#except myres*.txt
+*/**/*myres*.txt
 
 #ignore feature dev
 */**/*feature*/*
