@@ -32,7 +32,7 @@ public:
 	int get_group () const { return group; }
 	
 	int init (const char * n, int p, int q);
-	int read (FILE *fp = stdout);
+	int read (FILE *fp = stdin);
 	void print (FILE * fp = stdout) const;
 	
 	bool compare_group (Condition x, const Record& y) const;
