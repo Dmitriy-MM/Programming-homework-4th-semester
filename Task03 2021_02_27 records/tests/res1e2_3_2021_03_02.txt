@@ -1,0 +1,182 @@
+
+cwo 331 11
+nvaobeaiuy 963 1
+hoaeio 123 6
+
+oledu 415 981
+
+cwo 331 11
+nvaobeaiuy 963 1
+hoaeio 123 6
+
+yuoyyze 472 929
+yiw 172 946
+e 305 916
+oledu 415 981
+r 102 974
+u 764 961
+tursiuo 750 906
+zmaaecme 81 975
+qa 706 906
+ykwufo 859 978
+afqoohsoo 547 900
+
+z 633 534
+
+zdotzxhhan 30 203
+d 32 78
+
+eyoyueyei 967 664
+nvaobeaiuy 963 1
+umlrxvya 947 598
+m 982 53
+grckeow 948 769
+pasu 987 64
+
+
+ozatbay 943 461
+eyoyueyei 967 664
+otuuiigoji 918 428
+nvaobeaiuy 963 1
+umlrxvya 947 598
+m 982 53
+ovazy 909 507
+grckeow 948 769
+pasu 987 64
+
+e 305 916
+e 555 144
+e 865 349
+
+uq 143 689
+uowizgycq 122 137
+ua 385 230
+yuoyyze 472 929
+yiw 172 946
+ozatbay 943 461
+yshyuoao 226 127
+owhu 625 485
+zdotzxhhan 30 203
+yrol 256 871
+ouaaui 740 473
+otuuiigoji 918 428
+siiubmwgs 240 672
+oyoeyeeazs 243 864
+sioyofazye 175 116
+uuacifx 836 268
+umlrxvya 947 598
+xeceux 50 676
+vaiyuvh 824 687
+r 102 974
+utoueko 321 87
+tcoyalia 181 872
+vnlenuiiy 624 123
+u 764 961
+yr 463 99
+ucpyomaauu 768 71
+tursiuo 750 906
+q 161 295
+ysouyeosse 448 180
+syiky 308 423
+rrv 550 407
+zmaaecme 81 975
+sik 354 346
+qa 706 906
+znyeyauiao 642 583
+ykwufo 859 978
+yptiuz 539 456
+vi 257 624
+ovazy 909 507
+z 633 534
+xike 428 227
+uwnswei 164 152
+pasu 987 64
+
+cwo 331 11
+eiyf 218 209
+bituiuiage 401 650
+e 305 916
+aiuqi 549 322
+dincjomn 458 504
+agiyi 682 870
+av 366 444
+e 555 144
+aaioatyulz 803 257
+aactoslile 594 800
+aibeeake 599 191
+atmexe 407 349
+aoyimf 595 452
+ao 315 420
+e 865 349
+d 32 78
+cea 94 691
+dex 773 825
+afqoohsoo 547 900
+eebiuieiir 831 457
+
+av 366 444
+ao 315 420
+
+xike 428 227
+
+cwo 331 11
+uowizgycq 122 137
+dincjomn 458 504
+fyycva 812 451
+uuacifx 836 268
+xeceux 50 676
+tcoyalia 181 872
+ucpyomaauu 768 71
+aactoslile 594 800
+zmaaecme 81 975
+fcuurfe 304 142
+faucaguaa 422 531
+cea 94 691
+grckeow 948 769
+
+oledu 415 981
+
+ua 385 230
+iuea 645 600
+fyycva 812 451
+umlrxvya 947 598
+iaa 348 618
+tcoyalia 181 872
+faucaguaa 422 531
+qa 706 906
+cea 94 691
+mova 335 756
+
+cwo 331 11
+yiw 172 946
+rrv 550 407
+sik 354 346
+dex 773 825
+
+h 691 416
+i 370 868
+e 305 916
+k 799 82
+i 412 283
+r 102 974
+e 555 144
+f 741 201
+u 764 961
+q 161 295
+m 982 53
+e 865 349
+d 32 78
+z 633 534
+
+qa 706 906
+
+it 631 382
+av 366 444
+ao 315 420
+
+r 102 974
+u 764 961
+q 161 295
+z 633 534
+
+./a.out : Result = 158 

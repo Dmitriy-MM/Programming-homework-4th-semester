@@ -20,5 +20,8 @@
 */**/*test*.txt
 */**/*res*.txt
 
+#but "tests/" catalog is good for us
+!*/**/tests/*
+
 #ignore feature dev
 */**/*feature*/*

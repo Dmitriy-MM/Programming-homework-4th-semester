@@ -2,7 +2,8 @@ WINDOWS_FLAGS = -g -O0 -W -Wall -Wunused -Wcast-align -Werror -pedantic -pedanti
 
 LINUX_FLAGS = -O3 -fsanitize=address -mfpmath=sse -fstack-protector-all -g -W -Wall -Wextra -Wunused -Wcast-align -Werror -pedantic -pedantic-errors -Wfloat-equal -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Wformat=1 -Wwrite-strings -Wcast-align -Wno-long-long -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-qual -Wno-suggest-attribute=format
 
-CFLAGS = $(LINUX_FLAGS)
+TEST_PATH = tests/
+CFLAGS = $(WINDOWS_FLAGS)
 #CFLAGS = -O3 -lm -fsanitize=address -mfpmath=sse -fstack-protector-all -g -W -Wall -Wextra -Wunused -Wcast-align -Werror -pedantic -pedantic-errors -Wfloat-equal -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Wformat=1 -Wwrite-strings -Wcast-align -Wno-long-long -Woverloaded-virtual -Wnon-virtual-dtor -Wcast-qual -Wno-suggest-attribute=format
 
 
@@ -17,13 +18,14 @@ command.o: command.cpp
 
 a.out: main.o record.o command.o
 	g++ $(CFLAGS) $^ -o $@
+	rm -f *.o
 %.o: %.cpp
-	 g++ -c $(CFLAGS) $< -o $@
+	g++ -c $(CFLAGS) $< -o $@
 
 test:
-	cat commands.txt | ./a.out test_1e2.txt > "myres1e2.txt"
-	cat commands.txt | ./a.out test_1e4.txt > "myres1e4.txt"
-	cat commands.txt | ./a.out test_1e6.txt > "myres1e6.txt"
+	cat $(TEST_PATH)commands.txt | ./a.out $(TEST_PATH)test_1e2.txt > $(TEST_PATH)myres1e2.txt
+	cat $(TEST_PATH)commands.txt | ./a.out $(TEST_PATH)test_1e4.txt > $(TEST_PATH)myres1e4.txt
+	cat $(TEST_PATH)commands.txt | ./a.out $(TEST_PATH)test_1e6.txt > $(TEST_PATH)myres1e6.txt
 
 clean: 
 	rm -f *.out
