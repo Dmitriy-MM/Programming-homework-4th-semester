@@ -12,8 +12,8 @@ private:
 	List_2_node * prev = nullptr;
 public:
 	List_2_node () = default;
-	List_2_node (const List_2_node& x): T (x) {	next = nullptr;	prev = nullptr;	}
-	List_2_node (List_2_node&& x): T (x) { next = x.next; x.next = nullptr;	x.prev = nullptr; }
+	List_2_node (const List_2_node& x): T (x) { next = nullptr;	prev = nullptr;	}
+	List_2_node (List_2_node&& x): T ((T&&) x) { next = x.next; x.next = nullptr;	x.prev = nullptr; }
 	~List_2_node ()	{ next = nullptr; prev = nullptr; }
 	List_2_node& operator = (const List_2_node&);
 	List_2_node& operator = (List_2_node&&);
