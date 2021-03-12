@@ -1,0 +1,27 @@
+* where group = 208
+* where phone < 15
+* where name >= cwo
+name where phone > 950
+phone, group where name not like a%
+group, name, phone where group <> 208
+group, phone where name like c__
+group, name where phone = 123 and name like ___
+* where name < a and group > 250
+* where phone >= 890 and group <= 890
+group where name not like a[a-z][o-z] and phone > 900
+name where group = 208 or phone = 208
+* where name like %c% or group > 990 or phone = 100
+* where group <> 208 and phone <> 208 and name not like %d%
+group where group = 208 or name not like [^o-z][^a-o] or phone < 15
+name where name not like st% and phone > 890 and group = 208
+name, phone where name = or or phone = 100
+group, name where phone <> 200 and name = and and group <> 100
+* where name not like where and group = 208 and phone < 208
+name, group, phone where group < 25 or phone >= 850
+* where name <> cwd and phone > 900
+group, name where name >= oooo and phone < 150
+phone where phone < 5
+name where name not like o%
+phone where name like ___and___ or phone > 950
+* where name like or and phone <> 0
+phone, group where name <= eprst and phone <= 100 and group >= 950

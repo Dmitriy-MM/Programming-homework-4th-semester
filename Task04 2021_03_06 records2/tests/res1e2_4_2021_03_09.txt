@@ -1,0 +1,660 @@
+
+
+ h 691 416
+ uq 143 689
+ it 631 382
+ cwo 331 11
+ i 370 868
+ uowizgycq 122 137
+ ua 385 230
+ yuoyyze 472 929
+ eiyf 218 209
+ oaiaoev 537 200
+ oiviu 173 515
+ ikluuoyi 294 481
+ yiw 172 946
+ ozatbay 943 461
+ iyyo 701 570
+ iyxyqifwu 331 589
+ iuea 645 600
+ yshyuoao 226 127
+ e 305 916
+ eyoyueyei 967 664
+ k 799 82
+ iayiowuei 159 444
+ mquowaau 589 551
+ owhu 625 485
+ zdotzxhhan 30 203
+ yrol 256 871
+ oledu 415 981
+ ouaaui 740 473
+ otuuiigoji 918 428
+ siiubmwgs 240 672
+ oyoeyeeazs 243 864
+ dincjomn 458 504
+ fyycva 812 451
+ haej 487 282
+ sioyofazye 175 116
+ eyasy 861 632
+ nvaobeaiuy 963 1
+ uuacifx 836 268
+ umlrxvya 947 598
+ iaa 348 618
+ i 412 283
+ xeceux 50 676
+ keosi 825 249
+ eqzkvfey 310 260
+ vaiyuvh 824 687
+ r 102 974
+ utoueko 321 87
+ e 555 144
+ tcoyalia 181 872
+ f 741 201
+ vnlenuiiy 624 123
+ u 764 961
+ oiee 843 711
+ yr 463 99
+ ucpyomaauu 768 71
+ nigvj 700 47
+ tursiuo 750 906
+ q 161 295
+ lixpn 316 451
+ m 982 53
+ hoaeio 123 6
+ ysouyeosse 448 180
+ syiky 308 423
+ rrv 550 407
+ zmaaecme 81 975
+ sik 354 346
+ fcuurfe 304 142
+ faucaguaa 422 531
+ qa 706 906
+ znyeyauiao 642 583
+ ykwufo 859 978
+ yptiuz 539 456
+ e 865 349
+ d 32 78
+ vi 257 624
+ jb 570 865
+ mova 335 756
+ lukoepk 294 518
+ ovazy 909 507
+ z 633 534
+ ijyajeazre 471 569
+ xike 428 227
+ dex 773 825
+ grckeow 948 769
+ uwnswei 164 152
+ pasu 987 64
+ eebiuieiir 831 457
+ fvjuay 370 674
+
+ eyoyueyei
+ nvaobeaiuy
+ m
+ pasu
+
+ 691 416
+ 143 689
+ 631 382
+ 331 11
+ 370 868
+ 122 137
+ 385 230
+ 472 929
+ 218 209
+ 537 200
+ 173 515
+ 294 481
+ 172 946
+ 401 650
+ 943 461
+ 701 570
+ 331 589
+ 645 600
+ 226 127
+ 305 916
+ 967 664
+ 799 82
+ 159 444
+ 589 551
+ 625 485
+ 30 203
+ 256 871
+ 415 981
+ 740 473
+ 918 428
+ 240 672
+ 243 864
+ 458 504
+ 812 451
+ 487 282
+ 175 116
+ 861 632
+ 963 1
+ 836 268
+ 947 598
+ 348 618
+ 412 283
+ 50 676
+ 825 249
+ 310 260
+ 824 687
+ 102 974
+ 321 87
+ 555 144
+ 181 872
+ 741 201
+ 624 123
+ 764 961
+ 843 711
+ 463 99
+ 768 71
+ 700 47
+ 750 906
+ 161 295
+ 316 451
+ 982 53
+ 123 6
+ 448 180
+ 308 423
+ 550 407
+ 81 975
+ 354 346
+ 304 142
+ 422 531
+ 706 906
+ 642 583
+ 859 978
+ 539 456
+ 865 349
+ 32 78
+ 257 624
+ 94 691
+ 570 865
+ 335 756
+ 294 518
+ 909 507
+ 633 534
+ 471 569
+ 428 227
+ 773 825
+ 948 769
+ 164 152
+ 987 64
+ 831 457
+ 370 674
+
+ 416 h 691
+ 689 uq 143
+ 382 it 631
+ 11 cwo 331
+ 868 i 370
+ 137 uowizgycq 122
+ 230 ua 385
+ 929 yuoyyze 472
+ 209 eiyf 218
+ 200 oaiaoev 537
+ 515 oiviu 173
+ 481 ikluuoyi 294
+ 946 yiw 172
+ 650 bituiuiage 401
+ 461 ozatbay 943
+ 570 iyyo 701
+ 589 iyxyqifwu 331
+ 600 iuea 645
+ 127 yshyuoao 226
+ 916 e 305
+ 664 eyoyueyei 967
+ 82 k 799
+ 444 iayiowuei 159
+ 551 mquowaau 589
+ 485 owhu 625
+ 322 aiuqi 549
+ 203 zdotzxhhan 30
+ 871 yrol 256
+ 981 oledu 415
+ 473 ouaaui 740
+ 428 otuuiigoji 918
+ 672 siiubmwgs 240
+ 864 oyoeyeeazs 243
+ 504 dincjomn 458
+ 451 fyycva 812
+ 282 haej 487
+ 116 sioyofazye 175
+ 632 eyasy 861
+ 1 nvaobeaiuy 963
+ 268 uuacifx 836
+ 598 umlrxvya 947
+ 870 agiyi 682
+ 618 iaa 348
+ 283 i 412
+ 676 xeceux 50
+ 249 keosi 825
+ 260 eqzkvfey 310
+ 687 vaiyuvh 824
+ 974 r 102
+ 87 utoueko 321
+ 444 av 366
+ 144 e 555
+ 257 aaioatyulz 803
+ 872 tcoyalia 181
+ 201 f 741
+ 123 vnlenuiiy 624
+ 961 u 764
+ 711 oiee 843
+ 99 yr 463
+ 71 ucpyomaauu 768
+ 47 nigvj 700
+ 906 tursiuo 750
+ 295 q 161
+ 800 aactoslile 594
+ 451 lixpn 316
+ 191 aibeeake 599
+ 53 m 982
+ 6 hoaeio 123
+ 180 ysouyeosse 448
+ 423 syiky 308
+ 407 rrv 550
+ 349 atmexe 407
+ 975 zmaaecme 81
+ 346 sik 354
+ 142 fcuurfe 304
+ 531 faucaguaa 422
+ 452 aoyimf 595
+ 906 qa 706
+ 583 znyeyauiao 642
+ 420 ao 315
+ 978 ykwufo 859
+ 456 yptiuz 539
+ 349 e 865
+ 78 d 32
+ 624 vi 257
+ 691 cea 94
+ 865 jb 570
+ 756 mova 335
+ 518 lukoepk 294
+ 507 ovazy 909
+ 534 z 633
+ 569 ijyajeazre 471
+ 227 xike 428
+ 825 dex 773
+ 769 grckeow 948
+ 900 afqoohsoo 547
+ 152 uwnswei 164
+ 64 pasu 987
+ 457 eebiuieiir 831
+ 674 fvjuay 370
+
+ 11 331
+ 691 94
+
+
+
+ ozatbay 943 461
+ eyoyueyei 967 664
+ otuuiigoji 918 428
+ nvaobeaiuy 963 1
+ umlrxvya 947 598
+ m 982 53
+ ovazy 909 507
+ grckeow 948 769
+ pasu 987 64
+
+ 461
+ 664
+ 428
+ 1
+ 598
+ 53
+ 507
+ 769
+ 64
+
+
+ cwo 331 11
+ uowizgycq 122 137
+ dincjomn 458 504
+ fyycva 812 451
+ uuacifx 836 268
+ xeceux 50 676
+ tcoyalia 181 872
+ ucpyomaauu 768 71
+ aactoslile 594 800
+ zmaaecme 81 975
+ fcuurfe 304 142
+ faucaguaa 422 531
+ cea 94 691
+ grckeow 948 769
+
+ h 691 416
+ uq 143 689
+ it 631 382
+ cwo 331 11
+ i 370 868
+ uowizgycq 122 137
+ ua 385 230
+ yuoyyze 472 929
+ eiyf 218 209
+ oaiaoev 537 200
+ oiviu 173 515
+ ikluuoyi 294 481
+ yiw 172 946
+ bituiuiage 401 650
+ ozatbay 943 461
+ iyyo 701 570
+ iyxyqifwu 331 589
+ iuea 645 600
+ yshyuoao 226 127
+ e 305 916
+ eyoyueyei 967 664
+ k 799 82
+ iayiowuei 159 444
+ mquowaau 589 551
+ owhu 625 485
+ aiuqi 549 322
+ yrol 256 871
+ ouaaui 740 473
+ otuuiigoji 918 428
+ siiubmwgs 240 672
+ oyoeyeeazs 243 864
+ fyycva 812 451
+ haej 487 282
+ sioyofazye 175 116
+ eyasy 861 632
+ nvaobeaiuy 963 1
+ uuacifx 836 268
+ umlrxvya 947 598
+ agiyi 682 870
+ iaa 348 618
+ i 412 283
+ xeceux 50 676
+ keosi 825 249
+ eqzkvfey 310 260
+ vaiyuvh 824 687
+ r 102 974
+ utoueko 321 87
+ av 366 444
+ e 555 144
+ aaioatyulz 803 257
+ tcoyalia 181 872
+ f 741 201
+ vnlenuiiy 624 123
+ u 764 961
+ oiee 843 711
+ yr 463 99
+ ucpyomaauu 768 71
+ nigvj 700 47
+ tursiuo 750 906
+ q 161 295
+ aactoslile 594 800
+ lixpn 316 451
+ aibeeake 599 191
+ m 982 53
+ hoaeio 123 6
+ ysouyeosse 448 180
+ syiky 308 423
+ rrv 550 407
+ atmexe 407 349
+ zmaaecme 81 975
+ sik 354 346
+ fcuurfe 304 142
+ faucaguaa 422 531
+ aoyimf 595 452
+ qa 706 906
+ znyeyauiao 642 583
+ ao 315 420
+ ykwufo 859 978
+ yptiuz 539 456
+ e 865 349
+ vi 257 624
+ cea 94 691
+ jb 570 865
+ mova 335 756
+ lukoepk 294 518
+ ovazy 909 507
+ z 633 534
+ ijyajeazre 471 569
+ xike 428 227
+ grckeow 948 769
+ afqoohsoo 547 900
+ uwnswei 164 152
+ pasu 987 64
+ eebiuieiir 831 457
+ fvjuay 370 674
+
+ 416
+ 689
+ 11
+ 868
+ 137
+ 230
+ 929
+ 209
+ 200
+ 515
+ 481
+ 946
+ 650
+ 461
+ 570
+ 589
+ 600
+ 127
+ 916
+ 664
+ 82
+ 444
+ 551
+ 485
+ 322
+ 203
+ 871
+ 981
+ 473
+ 428
+ 672
+ 864
+ 504
+ 451
+ 282
+ 116
+ 632
+ 1
+ 268
+ 598
+ 870
+ 618
+ 283
+ 676
+ 249
+ 260
+ 687
+ 974
+ 87
+ 144
+ 257
+ 872
+ 201
+ 123
+ 961
+ 711
+ 99
+ 71
+ 47
+ 906
+ 295
+ 800
+ 451
+ 191
+ 53
+ 6
+ 180
+ 423
+ 407
+ 349
+ 975
+ 346
+ 142
+ 531
+ 452
+ 906
+ 583
+ 420
+ 978
+ 456
+ 349
+ 78
+ 624
+ 691
+ 865
+ 756
+ 518
+ 507
+ 534
+ 569
+ 227
+ 825
+ 769
+ 900
+ 152
+ 64
+ 457
+ 674
+
+
+
+
+
+ cwo 11 331
+ ozatbay 461 943
+ eyoyueyei 664 967
+ otuuiigoji 428 918
+ eyasy 632 861
+ nvaobeaiuy 1 963
+ umlrxvya 598 947
+ m 53 982
+ hoaeio 6 123
+ ykwufo 978 859
+ e 349 865
+ ovazy 507 909
+ grckeow 769 948
+ pasu 64 987
+
+ ozatbay 943 461
+ eyoyueyei 967 664
+ otuuiigoji 918 428
+ nvaobeaiuy 963 1
+ umlrxvya 947 598
+ m 982 53
+ ovazy 909 507
+ grckeow 948 769
+ pasu 987 64
+
+ 689 uq
+ 137 uowizgycq
+ 203 zdotzxhhan
+ 676 xeceux
+ 974 r
+ 975 zmaaecme
+
+
+ h
+ uq
+ it
+ cwo
+ i
+ uowizgycq
+ ua
+ yuoyyze
+ eiyf
+ ikluuoyi
+ yiw
+ bituiuiage
+ iyyo
+ iyxyqifwu
+ iuea
+ yshyuoao
+ e
+ eyoyueyei
+ k
+ iayiowuei
+ mquowaau
+ aiuqi
+ zdotzxhhan
+ yrol
+ siiubmwgs
+ dincjomn
+ fyycva
+ haej
+ sioyofazye
+ eyasy
+ nvaobeaiuy
+ uuacifx
+ umlrxvya
+ agiyi
+ iaa
+ i
+ xeceux
+ keosi
+ eqzkvfey
+ vaiyuvh
+ r
+ utoueko
+ av
+ e
+ aaioatyulz
+ tcoyalia
+ f
+ vnlenuiiy
+ u
+ yr
+ ucpyomaauu
+ nigvj
+ tursiuo
+ q
+ aactoslile
+ lixpn
+ aibeeake
+ m
+ hoaeio
+ ysouyeosse
+ syiky
+ rrv
+ atmexe
+ zmaaecme
+ sik
+ fcuurfe
+ faucaguaa
+ aoyimf
+ qa
+ znyeyauiao
+ ao
+ ykwufo
+ yptiuz
+ e
+ d
+ vi
+ cea
+ jb
+ mova
+ lukoepk
+ z
+ ijyajeazre
+ xike
+ dex
+ grckeow
+ afqoohsoo
+ uwnswei
+ pasu
+ eebiuieiir
+ fvjuay
+
+ 967
+ 963
+ 982
+ 987
+
+
+
+./a.out : Result = 632 
