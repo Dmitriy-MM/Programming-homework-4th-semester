@@ -1,0 +1,6 @@
+phone = 1234567
+group = 208
+name = Student
+phone >= 7654321
+group <> 208
+name > V

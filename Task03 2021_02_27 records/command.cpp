@@ -5,15 +5,6 @@
 
 static const int LEN = 1234;
 
-static void to_lower_case (char * str, int len)
-{
-	for (int i = 0; (i < len) && str[i]; i++)
-	{
-		if (str[i] <= 'Z' && str[i] >= 'A')
-			str[i] += 'a' - 'A';
-	}
-}	
-
 static Condition get_condition (const char * str)
 {
 	Condition c = Condition::none;
@@ -43,9 +34,6 @@ bool Command::parse (const char * str)
 	clean();
 	if (sscanf (str, "%s%s%s", field_name, operator_name, expression_name) != 3)
 		return false;
-	to_lower_case (field_name, LEN);
-	to_lower_case (operator_name, LEN);
-	to_lower_case (expression_name, LEN);
 	if (!strcmp (field_name, "phone"))
 	{
 		this->c_phone = get_condition (operator_name);

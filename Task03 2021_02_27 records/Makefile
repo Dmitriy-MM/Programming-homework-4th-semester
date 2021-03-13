@@ -27,6 +27,9 @@ test:
 	cat $(TEST_PATH)commands.txt | ./a.out $(TEST_PATH)test_1e4.txt > $(TEST_PATH)myres1e4.txt
 	cat $(TEST_PATH)commands.txt | ./a.out $(TEST_PATH)test_1e6.txt > $(TEST_PATH)myres1e6.txt
 
+check_memory:
+	valgrind cat $(TEST_PATH)commands.txt | ./a.out $(TEST_PATH)test_1e2.txt > $(TEST_PATH)myres1e2.txt
+
 clean: 
 	rm -f *.out
 	rm -f *.o
