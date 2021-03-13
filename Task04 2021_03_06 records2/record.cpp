@@ -116,8 +116,9 @@ bool Record::compare_group (Condition x, const Record& y) const
 bool Record::compare_name (Condition x, const Record& y) const
 {
 	int cmpres = 0;
-	if (this->get_name() != nullptr)
-		cmpres = strcmp (y.get_name(), this->get_name());
+	if (!(this->get_name() && y.get_name()))
+		return true;
+	cmpres = strcmp (y.get_name(), this->get_name());
 	switch (x)
 	{
 		case Condition::none: 

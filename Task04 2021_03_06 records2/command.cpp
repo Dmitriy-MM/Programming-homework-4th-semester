@@ -5,15 +5,6 @@
 
 static const int LEN = 1234;
 
-static void to_lower_case (char * str, int len = LEN)
-{
-	for (int i = 0; (i < len) && str[i]; i++)
-	{
-		if ((str[i] <= 'Z') && (str[i] >= 'A'))
-			str[i] += 'a' - 'A';
-	}
-}	
-
 static void skip_spaces (const char *& str)
 {
 	str += strspn (str, " \t\n");
@@ -159,7 +150,6 @@ bool Command::service_read_conditions (const char *& str)
 	if (sscanf (str_pos, "%s", operation_name) == 1)
 	{
 		int is_read = 0;
-		to_lower_case (operation_name);
 		if (!strcmp (operation_name, "and"))
 		{
 			this->op = Operation::land;
