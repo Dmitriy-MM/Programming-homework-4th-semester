@@ -1,0 +1,9 @@
+select *;
+select * where phone=10;
+insert (Student, 1234567, 208);
+insert (Student, 1234567, 208);
+select * where name = Student and phone = 1234567 and group = 208;
+select * where name = Student and 
+phone = 1234567 and group = 208;
+delete where Student and phone = 1234567 and group = 209; select * where name = Student and phone = 1234567 and group = 209;
+insert (Student, 1234567, 209); select * where name = Student and phone = 1234567 and group = 209;

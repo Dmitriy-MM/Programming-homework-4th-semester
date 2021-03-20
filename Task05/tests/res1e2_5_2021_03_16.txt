@@ -1,0 +1,832 @@
+ h 691 416
+ uq 143 689
+ it 631 382
+ cwo 331 11
+ i 370 868
+ uowizgycq 122 137
+ ua 385 230
+ yuoyyze 472 929
+ eiyf 218 209
+ oaiaoev 537 200
+ oiviu 173 515
+ ikluuoyi 294 481
+ yiw 172 946
+ bituiuiage 401 650
+ ozatbay 943 461
+ iyyo 701 570
+ iyxyqifwu 331 589
+ iuea 645 600
+ yshyuoao 226 127
+ e 305 916
+ eyoyueyei 967 664
+ k 799 82
+ iayiowuei 159 444
+ mquowaau 589 551
+ owhu 625 485
+ aiuqi 549 322
+ zdotzxhhan 30 203
+ yrol 256 871
+ oledu 415 981
+ ouaaui 740 473
+ otuuiigoji 918 428
+ siiubmwgs 240 672
+ oyoeyeeazs 243 864
+ dincjomn 458 504
+ fyycva 812 451
+ haej 487 282
+ sioyofazye 175 116
+ eyasy 861 632
+ nvaobeaiuy 963 1
+ uuacifx 836 268
+ umlrxvya 947 598
+ agiyi 682 870
+ iaa 348 618
+ i 412 283
+ xeceux 50 676
+ keosi 825 249
+ eqzkvfey 310 260
+ vaiyuvh 824 687
+ r 102 974
+ utoueko 321 87
+ av 366 444
+ e 555 144
+ aaioatyulz 803 257
+ tcoyalia 181 872
+ f 741 201
+ vnlenuiiy 624 123
+ u 764 961
+ oiee 843 711
+ yr 463 99
+ ucpyomaauu 768 71
+ nigvj 700 47
+ tursiuo 750 906
+ q 161 295
+ aactoslile 594 800
+ lixpn 316 451
+ aibeeake 599 191
+ m 982 53
+ hoaeio 123 6
+ ysouyeosse 448 180
+ syiky 308 423
+ rrv 550 407
+ atmexe 407 349
+ zmaaecme 81 975
+ sik 354 346
+ fcuurfe 304 142
+ faucaguaa 422 531
+ aoyimf 595 452
+ qa 706 906
+ znyeyauiao 642 583
+ ao 315 420
+ ykwufo 859 978
+ yptiuz 539 456
+ e 865 349
+ d 32 78
+ vi 257 624
+ cea 94 691
+ jb 570 865
+ mova 335 756
+ lukoepk 294 518
+ ovazy 909 507
+ z 633 534
+ ijyajeazre 471 569
+ xike 428 227
+ dex 773 825
+ grckeow 948 769
+ afqoohsoo 547 900
+ uwnswei 164 152
+ pasu 987 64
+ eebiuieiir 831 457
+ fvjuay 370 674
+
+ 416
+ 689
+ 382
+ 11
+ 868
+ 137
+ 230
+ 929
+ 209
+ 200
+ 515
+ 481
+ 946
+ 650
+ 461
+ 570
+ 589
+ 600
+ 127
+ 916
+ 664
+ 82
+ 444
+ 551
+ 485
+ 322
+ 203
+ 871
+ 981
+ 473
+ 428
+ 672
+ 864
+ 504
+ 451
+ 282
+ 116
+ 632
+ 1
+ 268
+ 598
+ 870
+ 618
+ 283
+ 676
+ 249
+ 260
+ 687
+ 974
+ 87
+ 444
+ 144
+ 257
+ 872
+ 201
+ 123
+ 961
+ 711
+ 99
+ 71
+ 47
+ 906
+ 295
+ 800
+ 451
+ 191
+ 53
+ 6
+ 180
+ 423
+ 407
+ 349
+ 975
+ 346
+ 142
+ 531
+ 452
+ 906
+ 583
+ 420
+ 978
+ 456
+ 349
+ 78
+ 624
+ 691
+ 865
+ 756
+ 518
+ 507
+ 534
+ 569
+ 227
+ 825
+ 769
+ 900
+ 152
+ 64
+ 457
+ 674
+
+ h 416 691
+ uq 689 143
+ it 382 631
+ cwo 11 331
+ i 868 370
+ uowizgycq 137 122
+ ua 230 385
+ yuoyyze 929 472
+ eiyf 209 218
+ oaiaoev 200 537
+ oiviu 515 173
+ ikluuoyi 481 294
+ yiw 946 172
+ bituiuiage 650 401
+ ozatbay 461 943
+ iyyo 570 701
+ iyxyqifwu 589 331
+ iuea 600 645
+ yshyuoao 127 226
+ e 916 305
+ eyoyueyei 664 967
+ k 82 799
+ iayiowuei 444 159
+ mquowaau 551 589
+ owhu 485 625
+ aiuqi 322 549
+ zdotzxhhan 203 30
+ yrol 871 256
+ oledu 981 415
+ ouaaui 473 740
+ otuuiigoji 428 918
+ siiubmwgs 672 240
+ oyoeyeeazs 864 243
+ dincjomn 504 458
+ fyycva 451 812
+ haej 282 487
+ sioyofazye 116 175
+ eyasy 632 861
+ nvaobeaiuy 1 963
+ uuacifx 268 836
+ umlrxvya 598 947
+ agiyi 870 682
+ iaa 618 348
+ i 283 412
+ xeceux 676 50
+ keosi 249 825
+ eqzkvfey 260 310
+ vaiyuvh 687 824
+ r 974 102
+ utoueko 87 321
+ av 444 366
+ e 144 555
+ aaioatyulz 257 803
+ tcoyalia 872 181
+ f 201 741
+ vnlenuiiy 123 624
+ u 961 764
+ oiee 711 843
+ yr 99 463
+ ucpyomaauu 71 768
+ nigvj 47 700
+ tursiuo 906 750
+ q 295 161
+ aactoslile 800 594
+ lixpn 451 316
+ aibeeake 191 599
+ m 53 982
+ hoaeio 6 123
+ ysouyeosse 180 448
+ syiky 423 308
+ rrv 407 550
+ atmexe 349 407
+ zmaaecme 975 81
+ sik 346 354
+ fcuurfe 142 304
+ faucaguaa 531 422
+ aoyimf 452 595
+ qa 906 706
+ znyeyauiao 583 642
+ ao 420 315
+ ykwufo 978 859
+ yptiuz 456 539
+ e 349 865
+ d 78 32
+ vi 624 257
+ cea 691 94
+ jb 865 570
+ mova 756 335
+ lukoepk 518 294
+ ovazy 507 909
+ z 534 633
+ ijyajeazre 569 471
+ xike 227 428
+ dex 825 773
+ grckeow 769 948
+ afqoohsoo 900 547
+ uwnswei 152 164
+ pasu 64 987
+ eebiuieiir 457 831
+ fvjuay 674 370
+
+ av 366 444
+ ao 315 420
+
+ zmaaecme 81 975
+
+ 929 472
+ 946 172
+ 916 305
+ 981 415
+ 974 102
+ 961 764
+ 906 750
+ 975 81
+ 906 706
+ 978 859
+
+ h 691
+ uq 143
+ it 631
+ cwo 331
+ i 370
+ uowizgycq 122
+ ua 385
+ yuoyyze 472
+ eiyf 218
+ oaiaoev 537
+ oiviu 173
+ ikluuoyi 294
+ yiw 172
+ bituiuiage 401
+ ozatbay 943
+ iyyo 701
+ iyxyqifwu 331
+ iuea 645
+ yshyuoao 226
+ e 305
+ eyoyueyei 967
+ k 799
+ iayiowuei 159
+ mquowaau 589
+ owhu 625
+ aiuqi 549
+ zdotzxhhan 30
+ yrol 256
+ oledu 415
+ ouaaui 740
+ otuuiigoji 918
+ siiubmwgs 240
+ oyoeyeeazs 243
+ dincjomn 458
+ fyycva 812
+ haej 487
+ sioyofazye 175
+ eyasy 861
+ nvaobeaiuy 963
+ uuacifx 836
+ umlrxvya 947
+ agiyi 682
+ iaa 348
+ i 412
+ xeceux 50
+ keosi 825
+ eqzkvfey 310
+ vaiyuvh 824
+ r 102
+ utoueko 321
+ av 366
+ e 555
+ aaioatyulz 803
+ tcoyalia 181
+ f 741
+ vnlenuiiy 624
+ u 764
+ oiee 843
+ yr 463
+ ucpyomaauu 768
+ nigvj 700
+ tursiuo 750
+ q 161
+ aactoslile 594
+ lixpn 316
+ aibeeake 599
+ m 982
+ hoaeio 123
+ ysouyeosse 448
+ syiky 308
+ rrv 550
+ atmexe 407
+ zmaaecme 81
+ sik 354
+ fcuurfe 304
+ faucaguaa 422
+ aoyimf 595
+ qa 706
+ znyeyauiao 642
+ ao 315
+ ykwufo 859
+ yptiuz 539
+ e 865
+ d 32
+ vi 257
+ cea 94
+ jb 570
+ mova 335
+ lukoepk 294
+ ovazy 909
+ z 633
+ ijyajeazre 471
+ xike 428
+ dex 773
+ grckeow 948
+ afqoohsoo 547
+ uwnswei 164
+ pasu 987
+ eebiuieiir 831
+ fvjuay 370
+
+
+ 11 331
+ 407 550
+
+ d 32 78
+ hoaeio 123 6
+ utoueko 321 87
+ cwo 331 11
+ yr 463 99
+ nigvj 700 47
+ ucpyomaauu 768 71
+ k 799 82
+ nvaobeaiuy 963 1
+ m 982 53
+ pasu 987 64
+
+ aactoslile
+ aaioatyulz
+ afqoohsoo
+ agiyi
+ aibeeake
+ aiuqi
+ ao
+ aoyimf
+ atmexe
+ av
+ bituiuiage
+ cea
+ cwo
+ d
+ dex
+ dincjomn
+ e
+ e
+ e
+ eebiuieiir
+ eiyf
+ eqzkvfey
+ eyasy
+ eyoyueyei
+ f
+ faucaguaa
+ fcuurfe
+ fvjuay
+ fyycva
+ grckeow
+ h
+ haej
+ hoaeio
+ i
+ i
+ iaa
+ iayiowuei
+ ijyajeazre
+ ikluuoyi
+ it
+ iuea
+ iyxyqifwu
+ iyyo
+ jb
+ k
+ keosi
+ lixpn
+ lukoepk
+ m
+ mova
+ mquowaau
+ nigvj
+ nvaobeaiuy
+ oaiaoev
+ oiee
+ oiviu
+ oledu
+ otuuiigoji
+ ouaaui
+ ovazy
+ owhu
+ oyoeyeeazs
+ ozatbay
+ pasu
+ q
+ qa
+ r
+ rrv
+ siiubmwgs
+ sik
+ sioyofazye
+ syiky
+ tcoyalia
+ tursiuo
+ u
+ ua
+ ucpyomaauu
+ umlrxvya
+ uowizgycq
+ uq
+ utoueko
+ uuacifx
+ uwnswei
+ vaiyuvh
+ vi
+ vnlenuiiy
+ xeceux
+ xike
+ yiw
+ ykwufo
+ yptiuz
+ yr
+ yrol
+ yshyuoao
+ ysouyeosse
+ yuoyyze
+ z
+ zdotzxhhan
+ zmaaecme
+ znyeyauiao
+
+ 30 203
+ 32 78
+ 50 676
+ 81 975
+ 94 691
+ 102 974
+ 122 137
+ 123 6
+ 143 689
+ 159 444
+ 161 295
+ 164 152
+ 172 946
+ 173 515
+ 175 116
+ 181 872
+ 218 209
+ 226 127
+ 240 672
+ 243 864
+ 256 871
+ 257 624
+ 294 481
+ 294 518
+ 304 142
+ 305 916
+ 308 423
+ 310 260
+ 315 420
+ 316 451
+ 321 87
+ 331 11
+ 331 589
+ 335 756
+ 348 618
+ 354 346
+ 366 444
+ 370 674
+ 370 868
+ 385 230
+ 401 650
+ 407 349
+ 412 283
+ 415 981
+ 422 531
+ 428 227
+ 448 180
+ 458 504
+ 463 99
+ 471 569
+ 472 929
+ 487 282
+ 537 200
+ 539 456
+ 547 900
+ 549 322
+ 550 407
+ 555 144
+ 570 865
+ 589 551
+ 594 800
+ 595 452
+ 599 191
+ 624 123
+ 625 485
+ 631 382
+ 633 534
+ 642 583
+ 645 600
+ 682 870
+ 691 416
+ 700 47
+ 701 570
+ 706 906
+ 740 473
+ 741 201
+ 750 906
+ 764 961
+ 768 71
+ 773 825
+ 799 82
+ 803 257
+ 812 451
+ 824 687
+ 825 249
+ 831 457
+ 836 268
+ 843 711
+ 859 978
+ 861 632
+ 865 349
+ 909 507
+ 918 428
+ 943 461
+ 947 598
+ 948 769
+ 963 1
+ 967 664
+ 982 53
+ 987 64
+
+ 81 975 zmaaecme
+ 102 974 r
+ 123 6 hoaeio
+ 172 946 yiw
+ 181 872 tcoyalia
+ 243 864 oyoeyeeazs
+ 256 871 yrol
+ 305 916 e
+ 370 868 i
+ 415 981 oledu
+ 472 929 yuoyyze
+ 487 282 haej
+ 547 900 afqoohsoo
+ 570 865 jb
+ 682 870 agiyi
+ 691 416 h
+ 706 906 qa
+ 750 906 tursiuo
+ 764 961 u
+ 773 825 dex
+ 859 978 ykwufo
+
+ Student 100 800
+ Student 110 800
+ Student 110 820
+
+
+ Student 100 800
+ Student 110 800
+ Student 110 820
+
+ 504
+ 507
+ 515
+ 518
+ 531
+ 534
+ 551
+ 569
+ 570
+ 583
+ 589
+ 598
+ 600
+ 618
+ 624
+ 632
+ 650
+ 664
+ 672
+ 674
+ 676
+ 687
+ 689
+ 691
+ 711
+ 756
+ 769
+ 800
+ 800
+ 800
+ 800
+ 820
+ 825
+ 864
+ 865
+ 868
+ 870
+ 871
+ 872
+ 900
+ 906
+ 906
+ 916
+ 929
+ 946
+ 961
+ 974
+ 975
+ 978
+ 981
+
+ 547 900
+ 570 865
+ 589 551
+ 594 800
+ 633 534
+ 642 583
+ 645 600
+ 682 870
+ 701 570
+ 706 906
+ 750 906
+ 764 961
+ 773 825
+ 824 687
+ 843 711
+ 859 978
+ 861 632
+ 909 507
+ 947 598
+ 948 769
+ 967 664
+
+ aactoslile
+ afqoohsoo
+ agiyi
+
+ 507
+ 534
+ 551
+ 570
+ 583
+ 598
+ 600
+ 632
+ 664
+ 687
+ 711
+ 769
+ 800
+ 825
+ 865
+ 870
+ 900
+ 906
+ 906
+ 961
+ 978
+
+
+ c 1 3
+ c 1 2
+ c 2 1
+ b 2 3
+ b 1 2
+ b 3 1
+ a 4 2
+ a 1 2
+ a 2 2
+
+ a 1 2
+ a 2 2
+ a 4 2
+ b 1 2
+ b 2 3
+ b 3 1
+ c 1 2
+ c 1 3
+ c 2 1
+
+ c 1
+ c 1
+ b 1
+ a 1
+ c 2
+ b 2
+ a 2
+ b 3
+ a 4
+
+ 1 2
+ 1 3
+ 2 1
+ 2 1
+ 2 1
+ 2 2
+ 2 4
+ 3 1
+ 3 2
+
+ c 1 2
+ c 1 3
+ c 2 1
+
+ c 1 3
+ c 1 2
+ c 2 1
+ a 4 2
+ a 1 2
+ a 2 2
+ b 100 100
+
+ a 4 2
+ a 1 2
+ a 2 2
+ b 100 100
+ c 1 3
+ c 1 2
+
+ b 10
+ b 100
+
+./a.out : Result = 912 
