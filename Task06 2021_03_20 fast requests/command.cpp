@@ -13,41 +13,41 @@ static void skip_spaces (const char *& str)
 }
 
 
-static int comparator (Record_ptr& p1, Record_ptr& p2, void * order_by)
-{
-	int i, condition = 0;
-	Record& r1 = *p1;
-	Record& r2 = *p2;
-	Ordering * order = (Ordering *) order_by;
+//static int comparator (Record_ptr& p1, Record_ptr& p2, void * order_by)
+//{
+	//int i, condition = 0;
+	//Record& r1 = *p1;
+	//Record& r2 = *p2;
+	//Ordering * order = (Ordering *) order_by;
 	
 	
-	for (i = 0; i < Command::Max_items; i++)
-	{
-		switch (order[i])
-		{
-			case Ordering::none:
-				break;
-			case Ordering::name:
-				if (!(r1.get_name() && r2.get_name()))
-					return 0;
-				condition = strcmp (r1.get_name(), r2.get_name());
-				if (condition)
-					return condition;
-				break;
-			case Ordering::group:
-				condition = r1.get_group () - r2.get_group ();
-				if (condition)
-					return condition;
-				break;
-			case Ordering::phone:
-				condition = r1.get_phone () - r2.get_phone ();
-				if (condition)
-					return condition;
-				break;
-		}
-	}
-	return 0;
-}
+	//for (i = 0; i < Command::Max_items; i++)
+	//{
+		//switch (order[i])
+		//{
+			//case Ordering::none:
+				//break;
+			//case Ordering::name:
+				//if (!(r1.get_name() && r2.get_name()))
+					//return 0;
+				//condition = strcmp (r1.get_name(), r2.get_name());
+				//if (condition)
+					//return condition;
+				//break;
+			//case Ordering::group:
+				//condition = r1.get_group () - r2.get_group ();
+				//if (condition)
+					//return condition;
+				//break;
+			//case Ordering::phone:
+				//condition = r1.get_phone () - r2.get_phone ();
+				//if (condition)
+					//return condition;
+				//break;
+		//}
+	//}
+	//return 0;
+//}
 
 
 static int hightlight_words (const char * str, char * field_name, char * operator_name, char * expression_name)
@@ -375,14 +375,16 @@ bool Command::service_read_command_type (const char *& str)
 // Print parsed structure.
 void Command::print (FILE *fp) const 
 {
-	this->Record::print ();
+	printf ("Command ");
 	if (c_name != Condition::none)
 		fprintf (fp, "c_name ");
 	if (c_phone != Condition::none)
 		fprintf (fp, "c_phone ");
 	if (c_group != Condition::none)
 		fprintf (fp, "c_group ");
-	fprintf (fp, "\n");
+	this->Record::print ();
+	
+	//fprintf (fp, "\n");
 }
 
 // Apply Command, return comparision result for Record ’x’.
@@ -404,7 +406,7 @@ bool Command::apply (const Record& x) const
 	return false;
 }
 
-
+/*
 List_2<Record_ptr> * Command::apply (List_2<Record>& list, int& count)
 {
 	int (*cmp) (Record_ptr&, Record_ptr&, void *) = comparator; 
@@ -453,3 +455,4 @@ List_2<Record_ptr> * Command::apply (List_2<Record>& list, int& count)
 	}
 	return nullptr;
 }
+*/

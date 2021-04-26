@@ -2,27 +2,29 @@
 #define LIST_2
 
 #include <stdio.h>
-// added join, set_head, restore_prev_links
+//#include "list_2_typename.h"
 /*
 *	@List2 realisation:
 *	private - service:
 *	List_2_node<T> * merge_with (List_2_node<T> * head_A, List_2_node<T> * head_B, List_2_node<T> * last, int compare (T&, T&));
 *	List_2_node<T> * merge_with (List_2_node<T> * head_A, List_2_node<T> * head_B, List_2_node<T> * last, int (*compare) (T&, T&, void *), void * compare_arg);
 *	void clear_list (void);
-*	void restore_prev_links (void);
 *
 *	Methods:
 *	List_2_node<T> * get_head () const;
+*	void set_head (List_2_node<T> * new_head);
 *	int get_length (void) const;
 *	List_2_node<T> * get_tail (void) const;
 *	List_2_node<T> * insert (List_2_node<T> * el);
 *	List_2_node<T> * insert (T& el);
+* 	void join (List_2_node<T> * el); // Joining "el" to tail. Doesn't removing "el->next" link.
+* 	void restore_prev_links (void); // Restoring "prev" links if "next" links are correct.
 *
-*	void print (FILE *fp = stdout);
-*	int read (FILE *fp);
+*	void print (FILE *fp = stdout); // Required T->print (FILE*).
+*	int read (FILE *fp); // Required T->read (FILE *).
 *
-*	void remove (List_2_node<T> * el);
-*	void cut (List_2_node<T> * el);
+*	void remove (List_2_node<T> * el); 
+*	void cut (List_2_node<T> * el); // Sewing el->prev with el->next.
 *	void swap (List_2<T> * second_list);
 *	
 *	void sort (int compare (T&, T&));
@@ -30,6 +32,7 @@
 *
 *	static void set_m (int new_m);
 *	static void set_r (int new_r);
+* 	
 *	
 *	ToDo: 
 *	
@@ -54,6 +57,7 @@ public:
 	List_2_node () = default;
 	List_2_node (const List_2_node& x): T (x) { next = nullptr;	prev = nullptr;	}
 	List_2_node (List_2_node&& x): T ((T&&) x) { next = x.next; x.next = nullptr; x.prev = nullptr; }
+	List_2_node (T&& x): T ((T&&) x) { next = nullptr; prev = nullptr; }
 	List_2_node& operator = (const List_2_node&);
 	List_2_node& operator = (List_2_node&&);
 
@@ -328,7 +332,14 @@ public:
 		{}
 		return cur;
 	}
-	
+	// EXPIREMENTAL!
+	void inject (List_2_node<T> * el) 
+	{
+		el->next = head;
+		if (head != nullptr)
+			head->prev = el;
+		head = el;
+	}
 	List_2_node<T> * insert (List_2_node<T> * el)
 	{
 		List_2_node<T> * tail, * curr;

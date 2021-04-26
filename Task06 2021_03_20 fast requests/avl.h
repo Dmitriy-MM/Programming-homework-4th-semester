@@ -65,7 +65,12 @@ public:
 	// Properties.
 	// Constructors.
 	AVL_tree_node () = default;
-	AVL_tree_node (AVL_tree_node&& el): T ((T&&) el) {}
+	AVL_tree_node (AVL_tree_node&& el): T ((T&&) el) {
+		this->left = el->left;
+		this->right = el->right;
+		this->next = el->next;
+		el->left = el->right = el->next = nullptr;
+	}
 	AVL_tree_node (const AVL_tree_node& el): T (el) {}
 	~AVL_tree_node () {
 		left = nullptr;
@@ -303,6 +308,52 @@ public:
 	~AVL_tree () { clear_subtree (root); root = nullptr; }
 	
 	// Methods.
+	int check_tree () {
+		int res;
+		return 0;
+		fix_heights (root);
+		res = check_avl_heights (root);
+		if (res == 0)
+			printf ("true avl\n");
+		else
+			printf ("nah, not avl\n");
+		printf ("deep %d\n", root->height);
+		return res;
+	}
+	int fix_heights (AVL_tree_node<T> * el) {
+		int lh = 0, rh = 0, max;
+		if (el->right != nullptr)
+			rh = fix_heights (el->right);
+		if (el->left != nullptr)
+			lh = fix_heights (el->left);
+		max = (lh>rh)?lh:rh;
+		el->height = max + 1;
+		return max+1;
+	}
+	int check_avl_heights (AVL_tree_node<T> * el){
+		// 0 - avl
+		// 1 - not_avl
+		int lh = 0, rh = 0, dif;
+		if (el->left != nullptr)
+		{
+			lh = el->left->height;
+			if (check_avl_heights (el->left) != 0)
+				return 1;
+		}
+		if (el->right != nullptr)
+		{
+			rh = el->right->height;
+			if (check_avl_heights (el->right) != 0)
+				return 2;
+		}
+		dif = (lh > rh)? lh - rh: rh - lh;
+		if (dif <= 1)
+			return 0;
+		else
+			return 3;
+	}
+	
+	
 	AVL_tree_node<T> * get_root (void) const {
 		return root;
 	}
